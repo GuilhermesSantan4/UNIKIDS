@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unikids</title>
+
+    <!-- Adicione o Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="stillo.css">
+
+    <!-- Adicione a biblioteca jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Adicione o Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+/* Estilos para o menu e a logo */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('UniKids 01.png'); /* Corrigido o caminho da imagem */
+    background-size: contain; /* Ajustado para 'contain' */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Garante que a imagem não se repita */
+}
+        nav {
+            background-color: #3386FF; /* Cor de fundo da barra de navegação */
+        }
+        
+        .nav-wrapper {
+            padding: 0 20px; /* Adiciona algum espaçamento interno à barra de navegação */
+        }
+
+        .brand-logo img {
+            max-height: 50px; /* Altura máxima da logo */
+            margin-top: 5px; /* Ajuste opcional de margem superior para alinhar a logo ao centro verticalmente */
+            max-width: 100%; /* Ajusta a largura máxima da imagem para 100% do contêiner pai */
+            height: auto; /* Mantém a proporção original, ajustando automaticamente a altura */
+        }
+
+        .contato-page {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #007bb5;
+        }
+                /* Estilos para o rodapé */
+footer {
+    background-color: #3906f1ec;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+}
+
+    </style>
+
+    <!-- Inicialize os componentes Materialize dentro do bloco $(document).ready() -->
+    <script>
+        $(document).ready(function () {
+            M.updateTextFields();
+            // Adicione aqui qualquer outra inicialização do Materialize que seja necessária
+        });
+    </script>
+</head>
+
+<body>
+   <!-- Navbarr -->
+   <nav>
+    <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+            <img src="UniKids 02logo.png" alt="Logo">
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+    <div class="contato-page">
+        <h2>Entre em Contato</h2>
+        <form action="enviar-contato.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <!-- Rodapé fixo -->
+    <footer>
+        <p>Este é um site escolar fictício <br> Foi feito por Guilherme Santos Santana - 16025055 e <br> Islaynne Souza Santos - 16029870 .</p>
+        <p>© 2023. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

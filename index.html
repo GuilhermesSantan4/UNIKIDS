@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unikids</title>
+    <!-- Folha de estido CSS-->
+    <link rel="stylesheet" href="css/materialize.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <!-- Adicione a biblioteca jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+        <!-- Adicione o Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="stillo.css">
+        <style>
+        /* Estilos para o menu e a logo */
+          nav {
+            background-color: #3386FF; /* Cor de fundo da barra de navegação */
+          }
+          .nav-wrapper {
+            padding: 0 20px; /* Adiciona algum espaçamento interno à barra de navegação */
+          }
+        
+          .brand-logo img {
+            max-height: 50px; /* Altura máxima da logo */
+            margin-top: 5px; /* Ajuste opcional de margem superior para alinhar a logo ao centro verticalmente */
+          }
+          body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Estilos para o conteúdo principal (ajuste conforme necessário) */
+        main {
+            padding: 20px;
+            min-height: calc(100vh - 120px); /* Ajuste para o tamanho do footer */
+        }
+        /* Estilos para o rodapé */
+footer {
+    background-color: #3906f1ec;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+    <!-- Navbarr -->
+    <nav>
+      <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+              <img src="UniKids 02logo.png" alt="Logo">
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="galeria.html">Galeria</a></li>
+              <li><a href="contato.html">Contato</a></li>
+          </ul>
+      </div>
+  </nav>
+  <!--Parte do texto de apresentação -->
+  <div class="texto-apresentacao">
+  <h1 class="center-align">Bem-vindo à UniKids School</h1>
+  <h4 class="center-align">Uma escola onde as crianças aprendem brincando</h4>
+  <p>A UniKids nasceu com um propósito apaixonante: oferecer uma educação excepcional que capacita os alunos a explorarem todo o seu potencial, transformando-os em cidadãos ativos e conscientes da comunidade global. Desde o nosso início, mantemos um compromisso inabalável com valores fundamentais, como Excelência Acadêmica, Desenvolvimento Integral, Inclusão e Diversidade, Envolvimento Comunitário e Preparação para o Futuro.</p>
+
+  <p>Movidos pela paixão e visão, continuamos trilhando esse caminho com entusiasmo e dedicação. Na UniKids, nossa missão é inspirar, educar e capacitar os alunos, guiando-os para se tornarem líderes responsáveis e contribuintes ativos em nossa sociedade. Convidamos você a fazer parte desta incrível jornada de aprendizado, crescimento e conquistas.</p>
+
+</div>
+  <!-- Carousel -->
+ <div class="carousel carousel-slider center">
+  <div class="carousel-fixed-item center">
+  </div>
+  <div class="carousel-item red white-text" href="img/1.jpg">
+      <img src="aleatorias.jpg" alt="First Panel">
+        <h2>First Panel</h2>
+      <p class="white-text">This is your first panel</p>
+  </div>
+  <div class="carousel-item amber white-text" href="img/2.jpg">
+      <img src="cariadas8.jpg" alt="First Panel">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+  </div>
+  <div class="carousel-item green white-text" href="img/3.jpg">
+      <img src="aleatorias2.jpg" alt="First Panel">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+  </div>
+  <div class="carousel-item blue white-text" href="img/4.jpg">
+      <img src="folcore2.jpg" alt="First Panel">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+  </div>
+</div>
+<!-- Adicione o Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+</script>
+<!-- Script do Carousel -->
+<script>
+  $(document).ready(function(){
+      $('.carousel.carousel-slider').carousel({
+          fullWidth: true,
+          indicators: true
+      });
+  });
+</script>
+<div class="row">
+  <!-- Card 1 -->
+  <div class="col s12 m6 l3">
+    <div class="card">
+      <div class="card-image">
+        <img src="dia das maes1.jpg" alt="Notícia 1">
+        <span class="card-title">Dia das mães UNIKIDS</span>
+      </div>
+      <div class="card-content">
+        <p>No Unikids, celebramos o Dia das Mães com um carinho especial. Em um ambiente acolhedor e cheio de amor, as mães são honradas com atividades encantadoras preparadas pelos alunos. Desde apresentações carinhosas até pequenos gestos de gratidão, o Dia das Mães na Unikids é um momento emocionante de celebração e reconhecimento, fortalecendo os laços familiares e destacando a importância do apoio maternal em nossa comunidade educacional.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="col s12 m6 l3">
+    <div class="card">
+      <div class="card-image">
+        <img src="prof e alunos.jpg" alt="Notícia 2">
+        <span class="card-title">Encontro entre professores e alunos</span>
+      </div>
+      <div class="card-content">
+        <p>Na Unikids, o Encontro entre Professores e Alunos é mais do que uma reunião acadêmica; é um momento de conexão única. Professores e alunos se encontram para compartilhar experiências, explorar ideias e fortalecer laços. Esse encontro especial na Unikids é um espaço onde a aprendizagem transcende as salas de aula, transformando-se em uma jornada de descoberta conjunta, criando uma comunidade educacional unida e inspiradora.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="col s12 m6 l3">
+    <div class="card">
+      <div class="card-image">
+        <img src="folcore2.jpg" alt="Notícia 3">
+        <span class="card-title">Dia do Folclore</span>
+      </div>
+      <div class="card-content">
+        <p>
+          Na Unikids, o Dia do Folclore é um momento mágico em que os alunos mergulham nas tradições culturais, explorando contos encantadores e lendas fascinantes. Com atividades divertidas e interativas, celebramos a riqueza do folclore, proporcionando aos alunos uma experiência educativa única. No Dia do Folclore na Unikids, a imaginação floresce, fortalecendo o apreço pelas nossas raízes culturais e criando memórias duradouras.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="col s12 m6 l3">
+    <div class="card">
+      <div class="card-image">
+        <img src="foto 5.jpg" alt="Notícia 4">
+        <span class="card-title">Dia do índio</span>
+      </div>
+      <div class="card-content">
+        <p>
+          Na Unikids, o Dia do Índio é celebrado com respeito e aprendizado. Os alunos mergulham na riqueza da cultura indígena, explorando tradições, artesanato e histórias autênticas. Com atividades envolventes, honramos a diversidade cultural, promovendo a compreensão e o apreço pelas contribuições dos povos indígenas. O Dia do Índio na Unikids é um momento de reflexão e celebração, destacando a importância da preservação e valorização da herança indígena.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h5 class="center-align">Saiba mais sobre nossa história</h5>
+  
+  <p><b>Unikids: Onde o Aprendizado é uma Aventura Criativa</b></p>
+
+  <p>Bem-vindo à Unikids, uma escola única onde a aprendizagem se transforma em uma emocionante jornada criativa. Localizada em um ambiente acolhedor e inovador, a Unikids tem como missão cultivar mentes curiosas e promover o desenvolvimento integral de cada aluno.</p>
+
+  <p><b>Ambiente Inspirador:</b></p>
+  <p>Nossa escola foi projetada para inspirar a imaginação e a criatividade. Com salas de aula coloridas e espaços abertos, os Unikids têm o privilégio de explorar um ambiente que estimula o aprendizado por meio da descoberta. Cada canto da escola foi cuidadosamente planejado para criar um ambiente propício à exploração e à expressão individual.</p>
+
+  <p><b>Abordagem Pedagógica Inovadora:</b></p>
+  <p>Na Unikids, acreditamos que cada criança é única, e nossa abordagem pedagógica reflete esse princípio. Integrando métodos tradicionais com abordagens modernas, nossos educadores estão comprometidos em nutrir o potencial único de cada aluno. A aprendizagem é personalizada, promovendo o desenvolvimento acadêmico, emocional e social.</p>
+
+  <p><b>Programa Curricular Dinâmico:</b></p>
+  <p>O currículo da Unikids é projetado para ir além dos livros didáticos. Incorporamos atividades práticas, projetos colaborativos e experiências de aprendizado interativas. Os Unikids participam de atividades que vão desde experimentos científicos até projetos de arte, garantindo que o aprendizado seja envolvente e significativo.</p>
+
+  <p><b>Fomentando a Criatividade:</b></p>
+  <p>Na Unikids, a criatividade é valorizada e incentivada. Oferecemos aulas de música, teatro, artes visuais e outras atividades que nutrem a expressão artística dos nossos alunos. Acreditamos que a criatividade é essencial para o pensamento inovador e para a construção de um futuro brilhante.</p>
+
+  <p><b>Comunidade Envolvente:</b></p>
+  <p>A Unikids não é apenas uma escola; é uma comunidade. Pais, professores e alunos colaboram para criar um ambiente de apoio e colaboração. Promovemos eventos regulares, reuniões de pais e atividades extracurriculares que fortalecem os laços entre os membros da nossa comunidade.</p>
+
+  <p>Na Unikids, a aprendizagem é uma jornada emocionante e única. Estamos comprometidos em preparar os Unikids para enfrentar os desafios do futuro com confiança, criatividade e uma paixão contínua pelo conhecimento. Junte-se a nós nesta aventura educacional extraordinária!</p>
+
+</div>
+    <!-- Rodapé fixo -->
+    <footer>
+      <p>Este é um site escolar fictício <br> Foi feito por Guilherme Santos Santana - 16025055 e <br> Islaynne Souza Santos - 16029870 .</p>
+      <p>© 2023. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Adicione o jQuery e Materialize JavaScript no final do corpo -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+      $(document).ready(function () {
+          M.updateTextFields();
+          // Adicione aqui qualquer outra inicialização do Materialize que seja necessária
+      });
+  </script>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    // Inicialize os componentes do Materialize
+    document.addEventListener('DOMContentLoaded', function () {
+      M.AutoInit();
+    });
+  </script></body>
+</body>
+</html>
